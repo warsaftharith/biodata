@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Form</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="biodata-box">
+            <h2>Biodata</h2>
+            <form id="biodataForm">
+                <div class="input-group">
+                    <label for="firstName">Nama Depan</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Nama Belakang</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="input-group">
+                    <label for="birthPlace">Tempat Lahir</label>
+                    <input type="text" id="birthPlace" name="birthPlace" required>
+                </div>
+                <div class="input-group">
+                    <label for="birthDate">Tanggal Lahir</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+                <div class="input-group">
+                    <label for="gender">Jenis Kelamin</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Pilih Jenis Kelamin</option>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="religion">Agama</label>
+                    <select id="religion" name="religion" required>
+                        <option value="">Pilih Agama</option>
+                        <option value="islam">Islam</option>
+                        <option value="christian">Kristen</option>
+                        <option value="catholic">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Hobi</label>
+                    <label><input type="checkbox" name="hobby" value="gaming"> Gaming</label>
+                    <label><input type="checkbox" name="hobby" value="programming"> Programming</label>
+                    <label><input type="checkbox" name="hobby" value="traveling"> Jalan-jalan</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/js/biodata.js"></script>
+</body>
+</html>
